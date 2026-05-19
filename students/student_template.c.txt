@@ -1,0 +1,45 @@
+/**
+ ******************************************************************************
+ * @file    student_template.c
+ * @author  <Your Name>
+ * @version V1.0.0
+ * @date    2026-05-19
+ * @brief   Student task01 implementation template.
+ ******************************************************************************
+ * @attention
+ *
+ * Copy this file to:
+ *
+ *     students/student_<your_id>.c
+ *
+ * Example:
+ *
+ *     students/student_2024123456.c
+ *
+ ******************************************************************************
+ */
+
+#include <stddef.h>
+
+const char *student_2024123456_id(void)
+{
+    return "2024123456";
+}
+
+const char *student_2024123456_name(void)
+{
+    return "Zhang San";
+}
+
+int student_2024123456_clamp_score(int score)
+{
+    if (score < 0) {
+        return 0;
+    }
+
+    if (score > 100) {
+        return 100;
+    }
+
+    return score;
+}

@@ -1,0 +1,3 @@
+[submodule "third_party/tinycalc"]
+	path = third_party/tinycalc
+	url = https://github.com/226z2/git-training-tinycalc.git

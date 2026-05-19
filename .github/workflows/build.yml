@@ -1,0 +1,21 @@
+name: build
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Configure
+        run: cmake -S . -B build -DENABLE_SUBREPO_BONUS=ON
+
+      - name: Build
+        run: cmake --build build
